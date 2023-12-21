@@ -1,0 +1,80 @@
+{
+    "dob": "16/06/1997",
+    "gender": "She/Her",
+    "info": "Just a Maniac in Virtual Reality",
+    "links": [
+        {
+          "url": "https://twitter.com/VesturoVRC",
+          "icon": "fab fa-x-twitter",
+          "text": " Virtual Reality Twitter",
+          "hoverColor": "#000000",
+          "hoverTextColor": "#ffff",
+          "disabled": false  
+        },
+        {
+          "url": "https://twitter.com/Ves_AfterDark",
+          "icon": "fas fa-fire",
+          "text": " +18 | AD Twitter",
+          "hoverColor": "#ff1b50",
+          "hoverTextColor": "#fff",
+          "disabled": false 
+        },
+        {
+          "url": "https://twitch.tv/vesturo",
+          "icon": "fab fa-twitch",
+          "text": " Twitch",
+          "hoverColor": "#6441a5",
+          "hoverTextColor": "#fff",
+          "disabled": false 
+        },
+        {
+          "url": "https://www.tiktok.com/@vesturovr",
+          "icon": "fab fa-youtube",
+          "text": " Youtube",
+          "hoverColor": "#FF0000",
+          "hoverTextColor": "#ffff",
+          "disabled": false 
+        },
+        {
+          "url": "https://www.tiktok.com/@vesturovr",
+          "icon": "fab fa-tiktok",
+          "text": " TikTok",
+          "hoverColor": "#ffffff",
+          "hoverTextColor": "#000000",
+          "disabled": false 
+        },
+        {
+          "url": "https://www.instagram.com/alisayar_/",
+          "icon": "fab fa-instagram",
+          "text": " Instagram",
+          "hoverColor": "#C13584",
+          "hoverTextColor": "#fff",
+          "disabled": false 
+        },
+        {
+          "url": "https://ko-fi.com/vesturo",
+          "icon": "fas fa-coffee",
+          "text": " Ko-Fi",
+          "hoverColor": "#FF5E5B",
+          "hoverTextColor": "#fff",
+          "disabled": false
+        },
+        {
+          "url": "https://www.patreon.com/vesturo",
+          "icon": "fab fa-patreon",
+          "text": " Patreon",
+          "hoverColor": "#f96854",
+          "hoverTextColor": "#fff",
+          "disabled": false
+        },
+        {
+          "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi_l_HowqCDAxU5X_EDHXyACvQQtwJ6BAgjEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DxvFZjo5PgG0&usg=AOvVaw1bR_FN-SnfIGtKD3fjAA5P&opi=89978449",
+          "icon": "fa fa-globe",
+          "text": " Portfolio",
+          "hoverColor": "#ffffff",
+          "hoverTextColor": "#000000",
+          "disabled": true
+        }
+      ]
+  }
+  

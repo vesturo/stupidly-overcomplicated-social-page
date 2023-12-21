@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+
+:root {
+    --textColor: white;
+    --font: 'Roboto', sans-serif;
+}
+
+html {
+    /*FONT:*/
+    font-family: var(--font);
+    color: var(--textColor);
+    font-size: 18px;
+    font-weight: 400;
+
+    /*BACKGROUND:*/
+    background: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (orientation: portrait) {
+    body {
+        width: unset !important;
+        max-width: 100%;
+        /* Adjust the maximum width for smaller screens */
+        margin: 10px auto;
+        /* Adjust margin for smaller screens */
+        padding: 10px;
+        /* Add padding for smaller screens */
+    }
+
+    main {
+        width: auto;
+        max-width: 100%;
+        /* Adjust the maximum width for smaller screens */
+        margin: 10px auto;
+        /* Adjust margin for smaller screens */
+        padding: 10px;
+        /* Add padding for smaller screens */
+    }
+}
+
+body {
+    margin: 10px auto;
+    /*auto - center the linktree*/
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.13);
+    width: 30%;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.178);
+    border-radius: 10px;
+}
+
+img {
+    width: 230px;
+    height: 230px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    /*round image*/
+}
+
+#userName {
+    font-weight: 700;
+    /*bold*/
+}
+
+#description {
+    margin: 20px auto;
+}
+
+main {
+    width: auto;
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+/* Links styles */
+a {
+    color: var(--textColor);
+    text-decoration: none;
+    border: 2px solid var(--hoverColor);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    transition: background-color .5s;
+    background-color: #4545459c;
+}
+
+a i {
+    margin-right: 10px;
+    /* Adjust as needed for spacing between icon and text */
+    margin-left: 10px;
+    /* Align the icon to the left */
+}
+
+a span {
+    text-align: center;
+    /* Center the text */
+    flex-grow: 1;
+    /* Allow the text to take up remaining space */
+    font-weight: bold;
+}
+
+/* Hover effect */
+a:hover {
+    background-color: var(--hoverColor, #ddd) !important;
+    /* Default to a light gray if hoverColor is not specified */
+}
+
+a:hover>span,
+a:hover>i {
+    color: var(--hoverTextColor, #000000) !important;
+    /* Default to a light gray if hoverColor is not specified */
+}

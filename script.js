@@ -21,24 +21,30 @@ function fetchData() {
                 const aElement = document.createElement('a');
                 aElement.href = link.url;
                 aElement.target = '_blank';
-            
+
                 const iElement = document.createElement('i');
                 iElement.className = link.icon;
                 aElement.style.setProperty('color', link.hoverColor || '#ddd');
-            
+
                 const spanElement = document.createElement('span');
                 spanElement.textContent = link.text;
 
                 aElement.style.setProperty('--hoverColor', link.hoverColor || '#ddd');
                 aElement.style.setProperty('--hoverTextColor', link.hoverTextColor || '#ddd');
-                if(link.disabled) {
+                if (link.disabled) {
                     aElement.classList.add("disabled");
                 }
+
+                const imageNames = data.imageNames;
+
+                // Construct image paths and set a random background when the page loads
+                const imagePaths = imageNames.map(imageName => `${imageName}`);
+                setRandomBackground(imagePaths);
 
                 // Append icon and text to the link
                 aElement.appendChild(iElement);
                 aElement.appendChild(spanElement);
-            
+
                 // Append link to the main element
                 mainElement.appendChild(aElement);
             });
@@ -48,3 +54,17 @@ function fetchData() {
 
 // Call the fetchData function when the page is loaded
 document.addEventListener('DOMContentLoaded', fetchData);
+
+function getRandomIndex(array) {
+    return Math.floor(Math.random() * array.length);
+}
+
+// Function to set a random background image
+function setRandomBackground(images) {
+    // Get a random image from the array
+    const randomIndex = getRandomIndex(images);
+    const randomImage = images[randomIndex];
+
+    // Set the background image of the body
+    document.documentElement.style.backgroundImage = `url('images/backgrounds/${randomImage}')`;
+}

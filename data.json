@@ -2,6 +2,12 @@
     "dob": "16/06/1997",
     "gender": "She/Her",
     "info": "Just a Maniac in Virtual Reality",
+    "imageNames": [
+      "bg1.jpg",
+      "bg2.jpg",
+      "bg3.jpg",
+      "bg4.jpg"
+    ],
     "links": [
         {
           "url": "https://twitter.com/VesturoVRC",

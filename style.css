@@ -173,3 +173,15 @@ a:hover>i {
         transform: rotate(360deg);
     }
 }
+
+#toggleButton {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.13);
+    border: 2px solid rgba(255, 255, 255, 0.178);
+    border-radius: 4px;
+    color: white;
+}

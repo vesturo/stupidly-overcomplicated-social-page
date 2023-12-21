@@ -58,6 +58,22 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("load", function () {
         document.getElementById("loading-screen").classList.add("hide");
     });
+    const toggleButton = document.getElementById('toggleButton');
+    const container = document.querySelector('.container');
+    const showIcon = document.getElementById('showIcon');
+    const hideIcon = document.getElementById('hideIcon');
+
+    toggleButton.addEventListener('click', function () {
+        if (container.style.display === 'none' || container.style.display === '') {
+            container.style.display = 'block';
+            showIcon.style.display = 'none';
+            hideIcon.style.display = 'inline';
+        } else {
+            container.style.display = 'none';
+            showIcon.style.display = 'inline';
+            hideIcon.style.display = 'none';
+        }
+    });
 });
 
 function getRandomIndex(array) {

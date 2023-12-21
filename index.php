@@ -35,7 +35,11 @@
   echo 'setRandomBackground(imagePaths);';
   echo '</script>';
   ?>
-  <div class="container">
+  <button id="toggleButton" data-bs-toggle="tooltip" data-bs-placement="top" title="Toggle Container Visibility">
+    <i class="fas fa-eye" id="showIcon" style="display:none;"></i>
+    <i class="fas fa-eye-slash" id="hideIcon"></i>
+  </button>
+  <div class="container" style="display: block;">
     <img src="./images/profile.jpg" alt="Profile Picture">
 
     <h3 id="userName">Vesturo </h3>

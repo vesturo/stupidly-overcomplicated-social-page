@@ -8,6 +8,12 @@
     --font: 'Roboto', sans-serif;
 }
 
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
 html {
     /*FONT:*/
     font-family: var(--font);
@@ -26,7 +32,7 @@ html {
 }
 
 @media (orientation: portrait) {
-    body {
+    .container {
         width: unset !important;
         max-width: 100%;
         /* Adjust the maximum width for smaller screens */
@@ -47,7 +53,7 @@ html {
     }
 }
 
-body {
+.container {
     margin: 10px auto;
     /*auto - center the linktree*/
     backdrop-filter: blur(5px);
@@ -122,4 +128,48 @@ a:hover>span,
 a:hover>i {
     color: var(--hoverTextColor, #000000) !important;
     /* Default to a light gray if hoverColor is not specified */
+}
+
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0c;
+    /* Set your background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 9999;
+}
+
+#loading-screen.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loading-icon {
+    /* You can use an animated loading icon here */
+    border: 8px solid #333;
+    /* Set your loading icon color */
+    border-top: 8px solid #fff;
+    /* Set your loading icon color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

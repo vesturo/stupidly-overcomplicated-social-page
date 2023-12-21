@@ -38,8 +38,8 @@ function fetchData() {
                 const imageNames = data.imageNames;
 
                 // Construct image paths and set a random background when the page loads
-                const imagePaths = imageNames.map(imageName => `${imageName}`);
-                setRandomBackground(imagePaths);
+
+
 
                 // Append icon and text to the link
                 aElement.appendChild(iElement);
@@ -52,8 +52,13 @@ function fetchData() {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-// Call the fetchData function when the page is loaded
-document.addEventListener('DOMContentLoaded', fetchData);
+document.addEventListener("DOMContentLoaded", function () {
+    fetchData();
+    // Hide the loading screen when the page is fully loaded
+    window.addEventListener("load", function () {
+        document.getElementById("loading-screen").classList.add("hide");
+    });
+});
 
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
@@ -67,4 +72,8 @@ function setRandomBackground(images) {
 
     // Set the background image of the body
     document.documentElement.style.backgroundImage = `url('images/backgrounds/${randomImage}')`;
+
+    var imagePaths = json_encode($imageFiles);
+    console.log(imagePaths);
+    setRandomBackground(imagePaths);
 }

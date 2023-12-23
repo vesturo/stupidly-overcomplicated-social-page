@@ -54,10 +54,10 @@ html {
 }
 
 .container {
-    margin: 10px auto;
+    margin: 5px auto;
     /*auto - center the linktree*/
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.13);
+    background-color: rgb(0 0 0 / 55%);
     width: 30%;
     padding: 20px;
     border: 2px solid rgba(255, 255, 255, 0.178);

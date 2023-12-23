@@ -29,14 +29,6 @@
         },
         {
           "url": "https://www.tiktok.com/@vesturovr",
-          "icon": "fab fa-youtube",
-          "text": " Youtube",
-          "hoverColor": "#FF0000",
-          "hoverTextColor": "#ffff",
-          "disabled": false 
-        },
-        {
-          "url": "https://www.tiktok.com/@vesturovr",
           "icon": "fab fa-tiktok",
           "text": " TikTok",
           "hoverColor": "#ffffff",
@@ -44,11 +36,19 @@
           "disabled": false 
         },
         {
-          "url": "https://www.instagram.com/alisayar_/",
+          "url": "https://www.instagram.com/vesturo/",
           "icon": "fab fa-instagram",
           "text": " Instagram",
           "hoverColor": "#C13584",
           "hoverTextColor": "#fff",
+          "disabled": false 
+        },
+        {
+          "url": "https://github.com/vesturo",
+          "icon": "fab fa-github",
+          "text": " Github",
+          "hoverColor": "#000",
+          "hoverTextColor": "#ffff",
           "disabled": false 
         },
         {
@@ -68,11 +68,19 @@
           "disabled": false
         },
         {
-          "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi_l_HowqCDAxU5X_EDHXyACvQQtwJ6BAgjEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DxvFZjo5PgG0&usg=AOvVaw1bR_FN-SnfIGtKD3fjAA5P&opi=89978449",
+          "url": "https://throne.com/vesturo",
           "icon": "fa fa-globe",
-          "text": " Portfolio",
+          "text": " Throne Wishlist",
           "hoverColor": "#ffffff",
           "hoverTextColor": "#000000",
+          "disabled": true
+        },
+        {
+          "url": "#",
+          "icon": "fa fa-globe",
+          "text": " Portfolio",
+          "hoverColor": "#000",
+          "hoverTextColor": "#ffff",
           "disabled": true
         }
       ]
